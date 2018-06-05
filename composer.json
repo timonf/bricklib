@@ -1,0 +1,20 @@
+{
+    "name": "timonf/bricklib",
+    "description": "Some utilities for BrickLink and LEGO Digital Designer",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "BrickLib\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Timon F",
+            "email": "dev@timonf.de"
+        }
+    ],
+    "require": {
+        "php": "^7.1"
+    }
+}
