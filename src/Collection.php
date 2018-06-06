@@ -28,7 +28,17 @@ class Collection implements IteratorAggregate, Countable
 
     public function add(Lot $lot): void
     {
-        $this->lots[] = $lot;
+        $matchFound = false;
+        array_walk($this->lots, function (Lot $currentLot) use ($lot, &$matchFound) {
+            if ($currentLot->getBrick()->matches($lot->getBrick())) {
+                $matchFound = true;
+                $currentLot->increaseQuantity($lot->getQuantity());
+            }
+        });
+
+        if (false === $matchFound) {
+            $this->lots[] = $lot;
+        }
     }
 
     public function getIterator()

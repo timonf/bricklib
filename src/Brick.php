@@ -28,6 +28,12 @@ final class Brick
         return $instance;
     }
 
+    public function matches(Brick $other): bool
+    {
+        return $other->getColor()->toBrickLinkColor() === $this->getColor()->toBrickLinkColor()
+            && $other->getDesign()->toBrickLinkDesign() === $this->getDesign()->toBrickLinkDesign();
+    }
+
     public function getColor(): Color
     {
         return $this->color;
