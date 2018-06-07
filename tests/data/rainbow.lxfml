@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<LXFML versionMajor="5" versionMinor="0" name="rainbow.lxf">
+  <Meta>
+    <Application name="LEGO Digital Designer" versionMajor="4" versionMinor="3"/>
+    <Brand name="LDD"/>
+    <BrickSet version="2670"/>
+  </Meta>
+  <Cameras>
+    <Camera refID="0" fieldOfView="80" distance="62.037513732910156" transformation="0.74887257814407349,0,-0.66271400451660156,-0.45694121718406677,0.72428584098815918,-0.51634758710861206,0.47999432682991028,0.68949991464614868,0.54239773750305176,18.014585494995117,42.632808685302734,35.05120849609375"/>
+  </Cameras>
+  <Bricks cameraRef="0">
+    <Brick refID="0" designID="3001" itemNos="300126">
+      <Part refID="0" designID="3001" materials="26">
+        <Bone refID="0" transformation="1,0,0,0,1,0,0,0,1,-12.40000057220459,0,12.399999618530273">
+        </Bone>
+      </Part>
+    </Brick>
+    <Brick refID="1" designID="3001" itemNos="4211085">
+      <Part refID="1" designID="3001" materials="199">
+        <Bone refID="1" transformation="1,0,0,0,1,0,0,0,1,-12.40000057220459,0,10.800000190734863">
+        </Bone>
+      </Part>
+    </Brick>
+    <Brick refID="2" designID="3001" itemNos="4211385">
+      <Part refID="2" designID="3001" materials="194">
+        <Bone refID="2" transformation="1,0,0,0,1,0,0,0,1,-12.40000057220459,0,9.1999998092651367">
+        </Bone>
+      </Part>
+    </Brick>
+    <Brick refID="3" designID="3001" itemNos="300101">
+      <Part refID="3" designID="3001" materials="1">
+        <Bone refID="3" transformation="1,0,0,0,1,0,0,0,1,-12.40000057220459,0,7.6000003814697266">
+        </Bone>
+      </Part>
+    </Brick>
+    <Brick refID="4" designID="3001" itemNos="300140">
+      <Part refID="4" designID="3001" materials="40">
+        <Bone refID="4" transformation="1,0,0,0,1,0,0,0,1,-12.40000057220459,0,6">
+        </Bone>
+      </Part>
+    </Brick>
+    <Brick refID="5" designID="3001" itemNos="4163803">
+      <Part refID="5" designID="3001" materials="154">
+        <Bone refID="5" transformation="1,0,0,0,1,0,0,0,1,-12.40000057220459,0,4.4000000953674316">
+        </Bone>
+      </Part>
+    </Brick>
+    <Brick refID="6" designID="3001" itemNos="300121">
+      <Part refID="6" designID="3001" materials="21">
+        <Bone refID="6" transformation="1,0,0,0,1,0,0,0,1,-12.40000057220459,0,2.8000001907348633">
+        </Bone>
+      </Part>
+    </Brick>
+    <Brick refID="7" designID="3001" itemNos="3001106">
+      <Part refID="7" designID="3001" materials="106">
+        <Bone refID="7" transformation="1,0,0,0,1,0,0,0,1,-12.40000057220459,0,1.2000000476837158">
+        </Bone>
+      </Part>
+    </Brick>
+    <Brick refID="8" designID="3001" itemNos="300124">
+      <Part refID="8" designID="3001" materials="24">
+        <Bone refID="8" transformation="1,0,0,0,1,0,0,0,1,-12.40000057220459,0,-0.40000000596046448">
+        </Bone>
+      </Part>
+    </Brick>
+    <Brick refID="9" designID="3001" itemNos="4122453">
+      <Part refID="9" designID="3001" materials="119">
+        <Bone refID="9" transformation="1,0,0,0,1,0,0,0,1,-12.40000057220459,0,-2">
+        </Bone>
+      </Part>
+    </Brick>
+    <Brick refID="10" designID="3001" itemNos="300137">
+      <Part refID="10" designID="3001" materials="37">
+        <Bone refID="10" transformation="1,0,0,0,1,0,0,0,1,-12.40000057220459,0,-5.1999998092651367">
+        </Bone>
+      </Part>
+    </Brick>
+    <Brick refID="11" designID="3001" itemNos="4625629">
+      <Part refID="11" designID="3001" materials="322">
+        <Bone refID="11" transformation="1,0,0,0,1,0,0,0,1,-12.40000057220459,0,-6.8000001907348633">
+        </Bone>
+      </Part>
+    </Brick>
+    <Brick refID="12" designID="3001" itemNos="300123">
+      <Part refID="12" designID="3001" materials="23">
+        <Bone refID="12" transformation="1,0,0,0,1,0,0,0,1,-12.40000057220459,0,-8.4000005722045898">
+        </Bone>
+      </Part>
+    </Brick>
+    <Brick refID="13" designID="3001" itemNos="4225243">
+      <Part refID="13" designID="3001" materials="268">
+        <Bone refID="13" transformation="1,0,0,0,1,0,0,0,1,-12.40000057220459,0,-10.000000953674316">
+        </Bone>
+      </Part>
+    </Brick>
+    <Brick refID="14" designID="3001" itemNos="300128">
+      <Part refID="14" designID="3001" materials="28">
+        <Bone refID="14" transformation="1,0,0,0,1,0,0,0,1,-12.40000057220459,0,-3.5999999046325684">
+        </Bone>
+      </Part>
+    </Brick>
+    <Brick refID="15" designID="3001" itemNos="4229355">
+      <Part refID="15" designID="3001" materials="221">
+        <Bone refID="15" transformation="1,0,0,0,1,0,0,0,1,-12.40000057220459,0,-11.600000381469727">
+        </Bone>
+      </Part>
+    </Brick>
+  </Bricks>
+  <RigidSystems>
+    <RigidSystem>
+      <Rigid refID="0" transformation="1,0,0,0,1,0,0,0,1,-12.40000057220459,0,12.399999618530273" boneRefs="0"/>
+    </RigidSystem>
+    <RigidSystem>
+      <Rigid refID="1" transformation="1,0,0,0,1,0,0,0,1,-12.40000057220459,0,10.800000190734863" boneRefs="1"/>
+    </RigidSystem>
+    <RigidSystem>
+      <Rigid refID="2" transformation="1,0,0,0,1,0,0,0,1,-12.40000057220459,0,9.1999998092651367" boneRefs="2"/>
+    </RigidSystem>
+    <RigidSystem>
+      <Rigid refID="3" transformation="1,0,0,0,1,0,0,0,1,-12.40000057220459,0,7.6000003814697266" boneRefs="3"/>
+    </RigidSystem>
+    <RigidSystem>
+      <Rigid refID="4" transformation="1,0,0,0,1,0,0,0,1,-12.40000057220459,0,6" boneRefs="4"/>
+    </RigidSystem>
+    <RigidSystem>
+      <Rigid refID="5" transformation="1,0,0,0,1,0,0,0,1,-12.40000057220459,0,4.4000000953674316" boneRefs="5"/>
+    </RigidSystem>
+    <RigidSystem>
+      <Rigid refID="6" transformation="1,0,0,0,1,0,0,0,1,-12.40000057220459,0,2.8000001907348633" boneRefs="6"/>
+    </RigidSystem>
+    <RigidSystem>
+      <Rigid refID="7" transformation="1,0,0,0,1,0,0,0,1,-12.40000057220459,0,1.2000000476837158" boneRefs="7"/>
+    </RigidSystem>
+    <RigidSystem>
+      <Rigid refID="8" transformation="1,0,0,0,1,0,0,0,1,-12.40000057220459,0,-0.40000000596046448" boneRefs="8"/>
+    </RigidSystem>
+    <RigidSystem>
+      <Rigid refID="9" transformation="1,0,0,0,1,0,0,0,1,-12.40000057220459,0,-2" boneRefs="9"/>
+    </RigidSystem>
+    <RigidSystem>
+      <Rigid refID="10" transformation="1,0,0,0,1,0,0,0,1,-12.40000057220459,0,-5.1999998092651367" boneRefs="10"/>
+    </RigidSystem>
+    <RigidSystem>
+      <Rigid refID="11" transformation="1,0,0,0,1,0,0,0,1,-12.40000057220459,0,-6.8000001907348633" boneRefs="11"/>
+    </RigidSystem>
+    <RigidSystem>
+      <Rigid refID="12" transformation="1,0,0,0,1,0,0,0,1,-12.40000057220459,0,-8.4000005722045898" boneRefs="12"/>
+    </RigidSystem>
+    <RigidSystem>
+      <Rigid refID="13" transformation="1,0,0,0,1,0,0,0,1,-12.40000057220459,0,-10.000000953674316" boneRefs="13"/>
+    </RigidSystem>
+    <RigidSystem>
+      <Rigid refID="14" transformation="1,0,0,0,1,0,0,0,1,-12.40000057220459,0,-3.5999999046325684" boneRefs="14"/>
+    </RigidSystem>
+    <RigidSystem>
+      <Rigid refID="15" transformation="1,0,0,0,1,0,0,0,1,-12.40000057220459,0,-11.600000381469727" boneRefs="15"/>
+    </RigidSystem>
+  </RigidSystems>
+  <GroupSystems>
+    <GroupSystem>
+    </GroupSystem>
+  </GroupSystems>
+  <BuildingInstructions>
+  </BuildingInstructions>
+</LXFML>
