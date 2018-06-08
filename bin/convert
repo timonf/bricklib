@@ -1,0 +1,54 @@
+#!/usr/bin/env php
+<?php
+
+declare(strict_types=1);
+
+use BrickLib\Exporter\BrickLinkXmlExporter;
+use BrickLib\Importer\ImporterInterface;
+use BrickLib\Importer\LddCsvImporter;
+use BrickLib\Importer\LDrawImporter;
+use BrickLib\Importer\LxfImporter;
+use BrickLib\Importer\LxfmlImporter;
+use BrickLib\Writer\StdoutWriter;
+
+require __DIR__.'/../vendor/autoload.php';
+
+$availableImporters = [
+    new LddCsvImporter(),
+    new LDrawImporter(),
+    new LxfImporter(),
+    new LxfmlImporter(),
+];
+
+if (!isset($argv[1])) {
+    printf('Usage: php %s <filename>' . PHP_EOL, $argv[0]);
+    return 1;
+}
+
+if (!file_exists($argv[1])) {
+    printf('File "%s" does not exist.' . PHP_EOL, $argv[1]);
+    return 2;
+}
+
+$importFile = new SplFileInfo($argv[1]);
+$importer = null;
+
+foreach ($availableImporters as $availableImporter) {
+    /** @var ImporterInterface $availableImporter */
+    if ($availableImporter->supports($importFile)) {
+        $importer = $availableImporter;
+        break;
+    }
+}
+
+if (!$importer instanceof ImporterInterface) {
+    printf('File extension "%s" does not match any importer.' . PHP_EOL, $importFile->getExtension());
+    return 3;
+}
+
+$collection = $importer->readFile($importFile);
+$writer = new StdoutWriter();
+$exporter = new BrickLinkXmlExporter();
+$exporter->export($collection, $writer);
+
+return 0;

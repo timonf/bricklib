@@ -9,33 +9,38 @@ use BrickLib\Collection;
 use BrickLib\Color;
 use BrickLib\Design;
 use BrickLib\Lot;
-use SimpleXMLElement;
 use SplFileInfo;
 
-class LxfmlImporter implements ImporterInterface
+class LDrawImporter implements ImporterInterface
 {
     public function readFile(SplFileInfo $fileInfo): Collection
     {
-        $xmlRoot = new SimpleXMLElement(file_get_contents($fileInfo->getRealPath()));
+        $fileHandler = fopen($fileInfo->getRealPath(), 'r');
         $collection = Collection::createEmptyCollection();
 
-        foreach ($xmlRoot->Bricks->children() as $brick) {
+        while ($line = fgetcsv($fileHandler, 0, ' ')) {
+            if ('1' !== $line[0]) {
+                continue;
+            }
+
             $collection->add(
                 Lot::create(
                     Brick::create(
-                        Design::fromLddDesignNumber((int) $brick['designID']),
-                        Color::fromLddColor((int) $brick->Part[0]['materials'])
+                        Design::fromLDrawFilename($line[14]),
+                        Color::create((int) $line[1])
                     ),
                     1
                 )
             );
         }
 
+        fclose($fileHandler);
+
         return $collection;
     }
 
     public function supports(SplFileInfo $fileInfo): bool
     {
-        return 'lxfml' === strtolower($fileInfo->getExtension());
+        return 'ldr' === strtolower($fileInfo->getExtension());
     }
 }

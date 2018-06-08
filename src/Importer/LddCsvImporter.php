@@ -45,4 +45,9 @@ class LddCsvImporter implements ImporterInterface
 
         return $collection;
     }
+
+    public function supports(SplFileInfo $fileInfo): bool
+    {
+        return 'csv' === strtolower($fileInfo->getExtension());
+    }
 }

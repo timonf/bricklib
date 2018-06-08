@@ -10,4 +10,5 @@ use SplFileInfo;
 interface ImporterInterface
 {
     public function readFile(SplFileInfo $fileInfo): Collection;
+    public function supports(SplFileInfo $fileInfo): bool;
 }

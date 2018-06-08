@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace BrickLib;
 
+use BrickLib\Exception\FileExtensionException;
+
 final class Design
 {
     // BrickLink alternatives for original LEGO Design Numbers
@@ -36,6 +38,23 @@ final class Design
 
     private function __construct()
     {
+    }
+
+    public static function fromLDrawFilename(string $lDrawFilename): self
+    {
+        $extensionOffset = strpos(strtolower($lDrawFilename), '.dat');
+
+        if (false === $extensionOffset) {
+            throw new FileExtensionException('dat', $lDrawFilename);
+        }
+
+        $part = substr($lDrawFilename, 0, $extensionOffset);
+        $partNumber = (int) preg_replace('/[^0-9]/', '', $part);
+
+        $instance = new self();
+        $instance->value = $partNumber;
+
+        return $instance;
     }
 
     public static function fromLddDesignNumber(int $lddDesignNumber): self

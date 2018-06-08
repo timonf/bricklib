@@ -1,26 +1,22 @@
 BrickLib
 ========
 
-This is a small library written in PHP to utilize LEGO brick lists. It can be used as Command Line Interface (see
-Usage) or as a library for your bricks project.
+This is a small library written in PHP to utilize LEGO brick lists. BrickLib is able to convert CSV files, LDD files and 
+LDraw files into BrickLink XML file format.
+
+Why?
+----
+
+BrickLink is also able to import LDD or LDraw files directly. But I got often errors like “Part not found in catalog. 
+item No:28327” or “Please fix the following duplicates: Item No: 3001, Color: 85”. For this reason I developed my own
+converter, which should avoid those errors. If you still get errors on BrickLink, please open an issue on GitHub!
 
 Usage
 -----
 
-First of all you have to run `composer install` (to enable autoloading).
-
-### From LXFML (Exported LEGO Digital Designer XML)
-
-1. In LDD (LEGO Digital Designer) click on `File` → `Export model` and save as `LXFML-File`
-2. Run `php bin/lxfml2xml [exported LXFML file] > bricklink.xml`
-3. Upload the `bricklink.xml` to BrickLink
-
-### From LDD CSV
-
-1. In LDD click on `File` → `Export BOM` and save as `Microsoft Office Open XML Workbook`
-2. Open Excel file and export it as CSV file.
-3. Run `php bin/csv2xml [exported CSV file] > bricklink.xml`
-4. Upload the `bricklink.xml` to BrickLink
+    bin/convert tests/data/rainbow.lxf > bricklinklist.xml
+    
+Make sure, you run `composer install` before (to enable autoloading).
 
 
 Disclaimer

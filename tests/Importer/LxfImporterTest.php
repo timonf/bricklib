@@ -4,17 +4,17 @@ declare(strict_types=1);
 
 namespace BrickLib\Test\Importer;
 
-use BrickLib\Importer\LddCsvImporter;
+use BrickLib\Importer\LxfImporter;
 use BrickLib\Lot;
 use PHPUnit\Framework\TestCase;
 use SplFileInfo;
 
-class LddCsvImporterTest extends TestCase
+class LxfImporterTest extends TestCase
 {
     public function testReadRainbowFile()
     {
-        $file = new SplFileInfo(__DIR__ . '/../data/rainbow.csv');
-        $importer = new LddCsvImporter();
+        $file = new SplFileInfo(__DIR__ . '/../data/rainbow.lxf');
+        $importer = new LxfImporter();
 
         $collection = $importer->readFile($file);
 
@@ -31,8 +31,8 @@ class LddCsvImporterTest extends TestCase
 
     public function testReadLoveFile()
     {
-        $file = new SplFileInfo(__DIR__ . '/../data/love.csv');
-        $importer = new LddCsvImporter();
+        $file = new SplFileInfo(__DIR__ . '/../data/love.lxf');
+        $importer = new LxfImporter();
 
         $collection = $importer->readFile($file);
 

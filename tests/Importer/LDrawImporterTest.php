@@ -4,17 +4,17 @@ declare(strict_types=1);
 
 namespace BrickLib\Test\Importer;
 
-use BrickLib\Importer\LddCsvImporter;
+use BrickLib\Importer\LDrawImporter;
 use BrickLib\Lot;
 use PHPUnit\Framework\TestCase;
 use SplFileInfo;
 
-class LddCsvImporterTest extends TestCase
+class LDrawImporterTest extends TestCase
 {
     public function testReadRainbowFile()
     {
-        $file = new SplFileInfo(__DIR__ . '/../data/rainbow.csv');
-        $importer = new LddCsvImporter();
+        $file = new SplFileInfo(__DIR__ . '/../data/rainbow.ldr');
+        $importer = new LDrawImporter();
 
         $collection = $importer->readFile($file);
 
@@ -31,8 +31,8 @@ class LddCsvImporterTest extends TestCase
 
     public function testReadLoveFile()
     {
-        $file = new SplFileInfo(__DIR__ . '/../data/love.csv');
-        $importer = new LddCsvImporter();
+        $file = new SplFileInfo(__DIR__ . '/../data/love.ldr');
+        $importer = new LDrawImporter();
 
         $collection = $importer->readFile($file);
 
